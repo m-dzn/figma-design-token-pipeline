@@ -1,0 +1,13 @@
+{
+  "name": "Design Token Pipeline",
+  "id": "1292337053670259659",
+  "api": "1.0.0",
+  "main": "code.js",
+  "ui": "ui.html",
+  "capabilities": [],
+  "enableProposedApi": false,
+  "editorType": ["figma"],
+  "networkAccess": {
+    "allowedDomains": ["none"]
+  }
+}
