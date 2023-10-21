@@ -1,11 +1,18 @@
 {
   "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
     "target": "es6",
-    "lib": ["es6"],
+    "jsx": "react-jsx",
+    "lib": ["es6", "dom"],
     "strict": true,
     "typeRoots": [
       "./node_modules/@types",
-      "./node_modules/@figma"
+      "./node_modules/@figma",
+      "src/@types"
     ]
-  }
+  },
+  "include": ["src/**/*", "typings-custom/**/*.ts", "@types"],
+  "exclude": ["**/node_modules"]
 }
