@@ -1,4 +1,5 @@
 const webpack = require("webpack");
+const path = require("path");
 const HtmlWebpackInlineSourcePlugin = require("@effortlessmotion/html-webpack-inline-source-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CaseSensitivePathsPlugin = require("case-sensitive-paths-webpack-plugin");
@@ -21,7 +22,7 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.sass$/,
+        test: /\.s?css$/,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
@@ -39,12 +40,22 @@ module.exports = {
     ],
   },
 
-  resolve: { extensions: [".tsx", ".ts", ".jsx", ".js"] },
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "../src"),
+    },
+    extensions: [".tsx", ".ts", ".jsx", ".js"],
+  },
 
   output: {
     filename: "[name].js",
     path: paths.appBuild,
     publicPath: "/",
+  },
+
+  optimization: {
+    usedExports: true,
+    concatenateModules: true,
   },
 
   plugins: [

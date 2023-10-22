@@ -2,12 +2,12 @@
   "name": "Design Token Pipeline",
   "id": "1292337053670259659",
   "api": "1.0.0",
-  "main": "./dist/plugin.js",
-  "ui": "./dist/ui.html",
+  "main": "dist/plugin.js",
+  "ui": "dist/ui.html",
   "capabilities": [],
   "enableProposedApi": false,
   "editorType": ["figma"],
   "networkAccess": {
-    "allowedDomains": ["none"]
+    "allowedDomains": ["https://www.figma.com"]
   }
 }

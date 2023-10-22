@@ -1,0 +1,6 @@
+export const VARIABLE_RESOLVED_TYPE = {
+  STRING: "STRING",
+  COLOR: "COLOR",
+  FLOAT: "FLOAT",
+  BOOLEAN: "BOOLEAN",
+} as const;

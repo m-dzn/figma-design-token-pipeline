@@ -34,7 +34,7 @@ const resolveModule = (filePath, resolveFn) => {
 module.exports = {
   appPath: resolveApp("."),
   appBuild: resolveApp("dist"),
-  pluginIndex: resolveModule("./src/plugin/index", resolveApp),
+  pluginIndex: resolveModule("./src/plugin/plugin", resolveApp),
   uiIndex: resolveModule("./src/ui/index", resolveApp),
   uiHtml: resolveApp("./src/ui/index.html"),
 };

@@ -11,7 +11,11 @@
       "./node_modules/@types",
       "./node_modules/@figma",
       "src/@types"
-    ]
+    ],
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
   "include": ["src/**/*", "typings-custom/**/*.ts", "@types"],
   "exclude": ["**/node_modules"]
